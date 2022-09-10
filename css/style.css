@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+body{
+    background-color: #f5f5f5;
+}
+#root{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+#topHeader, nav{
+    width: 100%;
+    background-color: #dcdcdc;
+    height: 45px;
+    display: flex;
+}
+.headerLeft, .headerRight, nav{
+    width: 50%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.headerLeft a{
+    text-decoration: none;
+    color: black;
+}
+.headerRight{
+    text-align: right;
+}
+.headerRight a{
+    margin-left: 15px;
+    text-decoration: none;
+    color: red;
+}
+nav{
+    width: 100%;
+}
+nav:hover{
+    cursor: pointer;
+}
+
+.logo{
+    max-width: 25%;
+    margin: 15px auto;
+}
+.logo img{
+    width: 100%;
+}
+#header h1{
+    text-align: center;
+    font-size: 50px;
+    font-weight: 300;
+    padding: 5px 0 20px 0;
+    letter-spacing: 2px;
+}
+.cards{
+    flex: 7;
+}
+.card{
+    width: 100%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+
+    overflow: hidden;
+    border-radius: 30px;
+    padding: 30px;
+    position: relative;
+    margin-bottom: 20px;
+}
+.card:hover{
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175)!important;
+}
+.card h3{
+    padding: 0 5px 3px 0;
+    font-size: 35px;
+    font-weight: 400;
+}
+.column{
+    flex: 1;
+}
+.column p{
+    padding: 5px 2px;
+    font-size: 20px;
+    font-weight: 400;
+}
+.hiddenCard{
+    display: flex;
+}
+.none{
+    display: none !important;
+}
+.moreDetails, .change, .delete{
+    padding: 10px;
+    width: 10pc;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 30px;
+    right: 150px;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    border: 1px solid black;
+    cursor: pointer;
+}
+.moreDetails:focus, .change:focus, .delete:focus{
+    outline: none;
+}
+.change, .delete{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+}
+.change{
+    right: 90px;
+    background-color: #228B22;
+    color: white;
+    border: none;
+}
+.delete{
+    right: 30px;
+    border: 3px solid red;
+    outline-offset: 3px;
+    padding: 7px 10px;
+    color: red;
+}
+.filter{
+    flex: 3;
+    margin-left: 50px;
+}
+aside{
+    position: sticky !important;
+    top: 30px;
+    margin: 0 0 2.8em 0;
+}
+aside{
+    position: relative;
+    margin-left: 20px;
+}
+aside input, aside i, select{
+    border: none;
+    outline: none;
+    background: transparent;
+}
+aside input, select, .editing input, #main input, #main textarea, #formLogin input, #changePassword input{
+    width: 100%;
+    font-size: 15px;
+    background: #fafafa;
+    border-radius: 2px;
+    padding: 16px 15px;
+    border: 1px solid #eaeaea;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.search{
+    padding: 16px 45px 16px 19px;
+}
+aside i {
+    height: 30px;
+    width: 30px;
+    position: absolute !important;
+    top: 16px;
+    right: 0;
+    border-right: 1px solid #eaeaea;
+}
+aside p{
+    font-size: 20px;
+    font-weight: 400;
+    color: #666666;
+    margin-bottom: 10px;
+}
+.age{
+    width: 49.3% !important;
+}
+input[type=button]{
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+input[type=submit]:hover{
+    box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);
+}
+.noResults{
+    width: 100%;
+    padding: 150px 20px;
+    text-align: center;
+    font-size: 50px;
+    background-color: #dcdcdc;
+}
+.amountsResult{
+    width: 100%;
+    padding: 30px 20px;
+    text-align: center;
+    font-size: 25px;
+    background-color: #dcdcdc;
+}
+.amountsResult a{
+    font-size: 30px;
+    text-decoration: none;
+}
+.addStaff{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+}

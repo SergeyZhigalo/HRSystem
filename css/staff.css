@@ -1,0 +1,29 @@
+#main, #changePassword{
+    max-width: 800px;
+    margin: 0 auto;
+}
+#main h3, #changePassword h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+#main label, #changePassword label{
+    font-size: 18px;
+    font-weight: 300;
+}
+input[type=button], #changePassword input[type=submit]{
+    color: black !important;
+    cursor: pointer !important;
+    font-size: 20px !important;
+}
+textarea{
+    min-height: 100px;
+    max-height: 300px;
+    resize: vertical;
+}
+.error{
+    color: #ff0000;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 500;
+}

@@ -1,0 +1,56 @@
+nav a{
+    text-decoration: none;
+    color: black;
+}
+.active, nav a:hover{
+    font-weight: bold;
+}
+.active{
+    text-transform: uppercase;
+}
+.root, #admin{
+    padding: 20px 30px;
+    display: flex;
+}
+.data, .editing{
+    width: 50%;
+}
+table{
+    border-collapse: collapse;
+}
+table, tr, th, td{
+    border: 1px solid black;
+}
+th, td{
+    padding: 5px;
+}
+.changeRecording, .deleteRecording{
+    border: none;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.changeRecording:focus, .deleteRecording:focus{
+    outline: none;
+}
+.deleteRecording{
+    color: red;
+}
+.changeRecording{
+    color: green;
+}
+.editing h3{
+    font-size: 30px;
+    font-weight: 500;
+    margin: 20px 0;
+}
+.editing input[type=text]{
+    width: 400px;
+}
+.editing input[type=button]{
+    width: 198px;
+}
+.editing label{
+    font-size: 18px;
+    font-weight: 300;
+}
